@@ -273,6 +273,7 @@ async function main() {
         }
       }
     } catch (err) {
+      core.info('Entering exception.')
       core.info(
         `[INVALID] Skipping commit ${commit.sha} as it doesn't follow conventional commit format.`
       )
