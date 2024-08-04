@@ -183,6 +183,7 @@ async function main() {
   let totalCommits = 0
   let hasMoreCommits = false
   const commits = []
+  core.info(`Using basehead of ${prefix}${latestTag.name}...${branch}`)
   do {
     hasMoreCommits = false
     curPage++
